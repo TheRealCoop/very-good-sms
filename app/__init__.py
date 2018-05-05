@@ -2,7 +2,10 @@ from os import environ
 
 from flask import Flask
 from flask_cors import CORS
+from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
+
+from app.views import INDEX
 
 
 DB = SQLAlchemy()
@@ -26,13 +29,14 @@ def create_app():
 
 
 def load_blueprints(app):
-    # from app.routing import register_api_endpoints
-    # register_api_endpoints(app)
+    from app.api.endpoints import API
 
-    from app.views import INDEX
+    app.register_blueprint(API)
     app.register_blueprint(INDEX)
 
 
 def load_db(app):
     DB.app = app
     DB.init_app(app)
+
+    Migrate(app, DB)

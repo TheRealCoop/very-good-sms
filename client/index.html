@@ -3,16 +3,58 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Very Good Building Company</title>
+  <title>Very Good SMS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" media="screen" href="client/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="client/milligram.min.css" />
 
   <script type=text/javascript src="client/jquery-3.3.1.min.js"></script>
   <script src="client/main.js"></script>
 
 </head>
 <body>
-  Such good
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <h1 id="title">Very Good SMS</h1>
+    </div>
+  </div>
+
+
+  <fieldset>
+    <label for="firstNameField">First Name</label>
+    <input type="text" placeholder="Ron" id="firstNameField">
+
+    <label for="lastNameField">Last Name</label>
+    <input type="text" placeholder="Swanson" id="lastNameField">
+
+<label for="phoneField">Phone Number</label>
+    <input type="number" placeholder="919-867-5309" id="phoneField">
+
+    <input class="button-primary" type="submit" value="Add Contact" id="createContact">
+  </fieldset>
+
+<hr>
+
+
+<label for="commentField">SMS Message Body</label>
+<textarea placeholder="You are the best!" id="messageField"></textarea>
+
+<table>
+  <thead>
+    <tr>
+      <th>Send SMS</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Phone Number</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody id='contactList'>
+  </tbody>
+</table>
+
+</div>
 </body>
 </html>

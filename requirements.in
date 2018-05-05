@@ -1,7 +1,6 @@
+decorator
 Flask
 Flask-Cors
+Flask-Migrate
 Flask-Sqlalchemy
-Gunicorn
-
-#Tests
-Pytest
+Twilio
