@@ -1,5 +1,5 @@
 # Very Good SMS
-This application's name is derived from [Very Good Building Company](https://www.youtube.com/watch?v=G4GcRiMj0JE). Please use this application to send your SMS text messages to folks or do not. I am not a begger.
+This application's name is derived from [Very Good Building Company](https://www.youtube.com/watch?v=G4GcRiMj0JE). Please use this application to send your SMS text messages to folks or do not. I am not a begger. If you choose to, then you can send one text at a time to one person of your choosing.
 
 ## Setup
 1. Apply the environment variables defined in .envrc.example to your environment. I've done this with the use of [direnv](https://github.com/direnv/direnv), but this can be done however you'd like. Note - if you do choose to use .envrc, then you'll need to copy the .envrc.example file and create a new one called .envrc
