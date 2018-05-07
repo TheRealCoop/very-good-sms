@@ -1,7 +1,5 @@
 from flask import jsonify
 
-from app import DB
-
 
 class FlaskError(Exception):
     def __init__(self, message=None, status_code=None):

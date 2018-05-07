@@ -5,6 +5,7 @@
 #    pip-compile --output-file requirements.txt requirements.in
 #
 alembic==0.9.9            # via flask-migrate
+attrs==18.1.0             # via pytest
 certifi==2018.4.16        # via requests
 chardet==3.0.4            # via requests
 click==6.7                # via flask
@@ -18,14 +19,19 @@ itsdangerous==0.24        # via flask
 jinja2==2.10              # via flask
 mako==1.0.7               # via alembic
 markupsafe==1.0           # via jinja2, mako
+more-itertools==4.1.0     # via pytest
+pluggy==0.6.0             # via pytest
+py==1.5.3                 # via pytest
 pyjwt==1.6.1              # via twilio
 pysocks==1.6.8            # via twilio
+pytest-flask==0.10.0
+pytest==3.5.1
 python-dateutil==2.7.2    # via alembic
 python-editor==1.0.3      # via alembic
 pytz==2018.4              # via twilio
 requests==2.18.4          # via twilio
-six==1.11.0               # via flask-cors, python-dateutil, twilio
+six==1.11.0               # via flask-cors, more-itertools, pytest, python-dateutil, twilio
 sqlalchemy==1.2.7         # via alembic, flask-sqlalchemy
 twilio==6.13.0
 urllib3==1.22             # via requests
-werkzeug==0.14.1          # via flask
+werkzeug==0.14.1          # via flask, pytest-flask

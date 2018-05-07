@@ -3,6 +3,7 @@ from os import environ, path
 
 DB_ROOT = path.join(path.dirname(path.realpath('database')), 'database')
 
+
 class BaseConfig():
     '''Base Flask config variables.'''
 

@@ -38,5 +38,4 @@ def load_blueprints(app):
 def load_db(app):
     DB.app = app
     DB.init_app(app)
-
     Migrate(app, DB)

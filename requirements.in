@@ -3,4 +3,6 @@ Flask
 Flask-Cors
 Flask-Migrate
 Flask-Sqlalchemy
+Pytest
+pytest-flask
 Twilio
